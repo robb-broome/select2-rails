@@ -1,3 +1,9 @@
+# EXPERIMENTAL and probably broken attempt to incorporate select2 v4 into the asset pipeline. 
+
+# Use [the real select2](https://github.com/argerim/select2-rails) if you don't want to break your stuff. !!!
+
+
+
 #Select2 for rails asset pipeline
 
 [Select2](https://github.com/select2/select2) is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.
@@ -12,7 +18,7 @@ The `select2-rails` gem integrates the `Select2` jQuery plugin with the Rails as
 
 Add `select2-rails` to your Gemfile and run `bundle install`:
 
-	gem "select2-rails"
+	gem "robb-broome/select2-rails"
 
 ### Include select2-rails javascript assets
 
@@ -28,11 +34,17 @@ Add to your `app/assets/stylesheets/application.css`:
 
 If you are using Twitter Boostrap you need to also require the bootstrap theme CSS in addition to the above require.
 
+_ not yet incorporated _
+
 	*= require select2-bootstrap
 
 ## Internationalization (i18n)
 
 The `select2-rails` now supports multiple languages.
+
+
+_ nope _ 
+
 
 Add the following to your `app/assets/javascripts/application.js`:
 
